@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>הוד דניה | עוברים לדירה חדשה בלי הון עצמי</title>
   <meta name="description" content="דיור מוגן יוקרתי בקריית היובל בירושלים. מגייסים מימון כנגד הדירה הקיימת, עוברים לדירה מוכנה ומשכירים את הקודמת עד שתימכר.">
+  <meta name="theme-color" content="#1f1b16">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   <meta property="og:title" content="בהוד דניה משנים את השיטה: עוברים לדירה חדשה בלי הון עצמי">
@@ -14,171 +15,186 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero.webp" type="image/webp">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <a class="skip-link" href="#contact">דילוג לטופס יצירת הקשר</a>
+  <svg width="0" height="0" class="sprite" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5c-5.2 0-9.5 3.9-9.5 8.8 0 2.2.9 4.3 2.4 5.8L4 21.5l4.7-1.5c1 .4 2.1.6 3.3.6 5.2 0 9.5-3.9 9.5-8.8S17.2 2.5 12 2.5zm-4 10a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6z"/></symbol>
+    <symbol id="i-deed" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6zM9 12l2 2 4-4"/></symbol>
+    <symbol id="i-growth" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 17l6-6 4 4 6-7M15 8h5v5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></symbol>
+  </svg>
 
-  <header class="topbar">
-    <div class="wrap topbar__inner">
-      <img class="topbar__logo" src="assets/logo.png" alt="הוד דניה - דיור מוגן ירושלמי" width="160" height="194">
-      <a class="topbar__phone" href="tel:+972737054213">073-705-4213</a>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <img class="site-header__mark" src="assets/wordmark.png" alt="הוד דניה - דיור מוגן ירושלמי" width="520" height="203">
+      <a class="glass-pill" href="tel:+972737054213">
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+        <span dir="ltr">073-705-4213</span>
+      </a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="wrap">
-        <p class="eyebrow">דיור מוגן יוקרתי · קריית היובל, ירושלים</p>
-        <h1>בהוד דניה משנים את השיטה: <span class="gold">כך עוברים לדירה חדשה בלי הון עצמי</span></h1>
-        <p class="lead">המעבר לדיור מוגן לא חייב לחכות עד שהדירה הנוכחית תימכר. במודל החדש של הוד דניה מגייסים מימון כנגד הדירה שכבר בבעלותכם, עוברים לדירה מוכנה בקריית היובל ומשכירים את הדירה הקודמת עד שתימכר. כך הנכס שיש לכם היום פותח את הדלת לדירה הבאה.</p>
+    <section class="hero" id="top">
+      <picture class="hero__bg">
+        <source srcset="assets/hero.webp" type="image/webp">
+        <img src="assets/hero.jpg" alt="בניין הוד דניה ברחוב גולומב 25, צילום מהדשא של פארק דניה" width="2400" height="1280" fetchpriority="high">
+      </picture>
+      <div class="wrap hero__content">
+        <p class="eyebrow eyebrow--light">דיור מוגן יוקרתי · קריית היובל, ירושלים</p>
+        <h1>בהוד דניה משנים את השיטה: <span class="gold-text">כך עוברים לדירה חדשה בלי&nbsp;הון&nbsp;עצמי</span></h1>
+        <p class="hero__lead">המעבר לדיור מוגן לא חייב לחכות עד שהדירה הנוכחית תימכר. מגייסים מימון כנגד הדירה שכבר בבעלותכם, עוברים לדירה מוכנה ומשכירים את הקודמת עד שתימכר.</p>
         <div class="actions">
-          <a class="btn btn--gold" href="#contact">לתיאום פגישה</a>
-          <a class="btn btn--ghost" href="tel:+972737054213">חייגו 073-705-4213</a>
+          <a class="btn btn--wa" href="tel:+972737054213" data-whatsapp>
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>שלחו הודעה בוואטסאפ
+          </a>
+          <a class="btn btn--glass" href="tel:+972737054213">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>חייגו <span dir="ltr">073-705-4213</span>
+          </a>
         </div>
       </div>
-      <figure class="hero__photo wrap">
-        <picture>
-          <source srcset="assets/building.webp" type="image/webp">
-          <img src="assets/building.jpg" alt="בניין הוד דניה ברחוב גולומב 25, צילום מהדשא של פארק דניה" width="1600" height="853" fetchpriority="high">
-        </picture>
-        <figcaption>הוד דניה, רחוב גולומב 25, מול פארק דניה</figcaption>
-      </figure>
     </section>
 
     <section class="section" aria-labelledby="model-title">
-      <div class="wrap prose">
-        <h2 id="model-title">המודל: הדירה הקיימת היא המפתח לדירה הבאה</h2>
-        <p>רוב מי שמגיעים להוד דניה כבר גרים בדירה משלהם, לפעמים שלושים וארבעים שנה. השאלה שמעסיקה אותם היא לא רק איזו דירה לבחור, אלא איך לממן אותה בלי למכור קודם את הבית ובלי למשוך את החסכונות שנועדו לשנים הבאות. מכירה תחת לחץ של זמן עלולה להסתיים במחיר נמוך ממה שהדירה שווה, ומעבר דירה בגיל הזה דורש זמן ותכנון.</p>
-        <p>מתוך ההבנה הזו, <strong>הוד דניה</strong> משנה את השיטה עם מודל שמאפשר לבחון רכישה בלי להעמיד הון עצמי מכספים נזילים, באמצעות מימון כנגד נכס קיים. בפרויקט שעדיין נבנה צריך לממן את שנות הבנייה ולחכות למסירה, ואילו הדירות בהוד דניה כבר בנויות ומוכנות לכניסה.</p>
-        <p>הרעיון הוא להסתכל על התמונה הכלכלית כולה. חשוב כמה כסף פנוי יש בחשבון היום, אבל חשוב גם איזה נכס כבר עומד לרשותכם ומה הוא יכול להכניס בזמן שאתם גרים במקום אחר.</p>
+      <div class="wrap model">
+        <div class="prose reveal">
+          <p class="eyebrow">המודל החדש</p>
+          <h2 id="model-title">הדירה שיש לכם היום פותחת את הדלת לדירה הבאה</h2>
+          <p>רוב מי שמגיעים להוד דניה כבר גרים בדירה משלהם, לפעמים שלושים וארבעים שנה. השאלה שמעסיקה אותם היא לא רק איזו דירה לבחור, אלא איך לממן אותה בלי למכור קודם את הבית ובלי למשוך את החסכונות שנועדו לשנים הבאות. מכירה תחת לחץ של זמן עלולה להסתיים במחיר נמוך ממה שהדירה שווה.</p>
+          <p>מתוך ההבנה הזו, <strong>הוד דניה</strong> משנה את השיטה עם מודל שמאפשר לבחון רכישה בלי להעמיד הון עצמי מכספים נזילים, באמצעות מימון כנגד נכס קיים. בפרויקט שעדיין נבנה צריך לממן את שנות הבנייה ולחכות למסירה, ואילו הדירות בהוד דניה כבר בנויות ומוכנות לכניסה.</p>
+          <p>הרעיון הוא להסתכל על התמונה הכלכלית כולה. חשוב כמה כסף פנוי יש בחשבון היום, אבל חשוב גם איזה נכס כבר עומד לרשותכם ומה הוא יכול להכניס בזמן שאתם גרים במקום אחר.</p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__step reveal">
+            <span class="timeline__num" aria-hidden="true">1</span>
+            <div>
+              <h3>מגייסים מימון כנגד הדירה הקיימת</h3>
+              <p>בלי להעמיד הון עצמי מכספים נזילים ובלי למשוך חסכונות.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__num" aria-hidden="true">2</span>
+            <div>
+              <h3>עוברים לגור בדירה מוכנה</h3>
+              <p>הדירות בהוד דניה בנויות, ואין שנות בנייה לחכות להן.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__num" aria-hidden="true">3</span>
+            <div>
+              <h3>משכירים את הקודמת, ומוכרים כשנוח</h3>
+              <p>שכר הדירה נכנס בזמן שאתם כבר בבית החדש. כשהדירה נמכרת, בזמן ובמחיר שמתאימים לכם, סוגרים את ההלוואה.</p>
+            </div>
+          </li>
+        </ol>
       </div>
-      <ol class="wrap steps">
-        <li class="step reveal">
-          <span class="step__num" aria-hidden="true">1</span>
-          <h3>מגייסים מימון כנגד הדירה הקיימת</h3>
-          <p>בלי להעמיד הון עצמי מכספים נזילים ובלי למשוך חסכונות.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__num" aria-hidden="true">2</span>
-          <h3>עוברים לגור בדירה מוכנה</h3>
-          <p>הדירות בהוד דניה בנויות, ואין שנות בנייה לחכות להן.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__num" aria-hidden="true">3</span>
-          <h3>משכירים את הקודמת, ומוכרים כשנוח</h3>
-          <p>שכר הדירה נכנס בזמן שאתם כבר בבית החדש. כשהדירה נמכרת, בזמן ובמחיר שמתאימים לכם, סוגרים את ההלוואה.</p>
-        </li>
-      </ol>
     </section>
 
-    <section class="section section--tint" aria-labelledby="audiences-title">
+    <section class="section section--surface" aria-labelledby="audiences-title">
       <div class="wrap">
-        <h2 id="audiences-title" class="center">למי זה מתאים</h2>
-        <div class="cards">
-          <article class="card reveal">
-            <picture>
+        <header class="section-head reveal">
+          <p class="eyebrow">למי זה מתאים</p>
+          <h2 id="audiences-title">שלוש דרכים להגיע להוד דניה</h2>
+        </header>
+        <div class="features">
+          <article class="feature reveal">
+            <picture class="feature__photo">
               <source srcset="assets/living-room.webp" type="image/webp">
-              <img src="assets/living-room.jpg" alt="סלון ומרפסת באחת הדירות הפנויות, עם נוף לירושלים" width="1000" height="750" loading="lazy">
+              <img src="assets/living-room.jpg" alt="סלון ומרפסת באחת הדירות הפנויות, עם נוף לירושלים" width="1200" height="900" loading="lazy">
             </picture>
-            <div class="card__body">
+            <div class="feature__text">
+              <span class="feature__index" aria-hidden="true">01</span>
               <h3>בני 60 ומעלה: לעבור בלי למהר למכור</h3>
-              <p>מי שגרים בדירה גדולה אחרי שהילדים כבר עזבו מתלבטים לא פעם אם לעבור לדיור מוגן, וההחלטה נדחית לפעמים רק בגלל סדר הפעולות: קודם צריך למכור, ורק אחר כך אפשר לקנות. המודל של הוד דניה הופך את הסדר הזה. נכנסים לדירה מוכנה עם מרפסת וממ"ד ומשכירים את הדירה הקודמת. שכר הדירה יכול לעזור בהחזרים החודשיים עד שהדירה נמכרת, ואת המכירה עצמה עושים בלי לחץ של זמן.</p>
+              <p>מי שגרים בדירה גדולה אחרי שהילדים כבר עזבו מתלבטים לא פעם אם לעבור לדיור מוגן, וההחלטה נדחית לפעמים רק בגלל סדר הפעולות: קודם צריך למכור, ורק אחר כך אפשר לקנות. המודל של הוד דניה הופך את הסדר הזה.</p>
+              <p>נכנסים לדירה מוכנה עם מרפסת וממ"ד ומשכירים את הדירה הקודמת. שכר הדירה יכול לעזור בהחזרים החודשיים עד שהדירה נמכרת, ואת המכירה עצמה עושים בלי לחץ של זמן.</p>
             </div>
           </article>
-          <article class="card reveal">
-            <picture>
+          <article class="feature reveal">
+            <picture class="feature__photo">
               <source srcset="assets/kitchen.webp" type="image/webp">
-              <img src="assets/kitchen.jpg" alt="המטבח באחת הדירות המוכנות" width="1000" height="750" loading="lazy">
+              <img src="assets/kitchen.jpg" alt="המטבח באחת הדירות המוכנות" width="1200" height="900" loading="lazy">
             </picture>
-            <div class="card__body">
+            <div class="feature__text">
+              <span class="feature__index" aria-hidden="true">02</span>
               <h3>משקיעים: דירה מוכנה שאפשר להשכיר כבר עכשיו</h3>
-              <p>חלק גדול מההון של משקיעים כבר מושקע בנכסים קיימים, ולא תמיד רוצים למשוך כסף מאפיקי השקעה אחרים. המודל עשוי להתאים למי שמחזיקים דירה אחת ושוקלים דירה נוספת, וגם למשקיעים שכבר צברו כמה נכסים. הדירות בנויות, ולכן אפשר להשכיר לדיירים בני 60 ומעלה כבר עכשיו. דירה בבעלות מלאה בטאבו מתאימה גם לתושבי חוץ שמתכננים לעלות ורוצים שנכס בירושלים יחכה להם.</p>
+              <p>חלק גדול מההון של משקיעים כבר מושקע בנכסים קיימים, ולא תמיד רוצים למשוך כסף מאפיקי השקעה אחרים. המודל עשוי להתאים למי שמחזיקים דירה אחת ושוקלים דירה נוספת, וגם למשקיעים שכבר צברו כמה נכסים.</p>
+              <p>הדירות בנויות, ולכן אפשר להשכיר לדיירים בני 60 ומעלה כבר עכשיו. דירה בבעלות מלאה בטאבו מתאימה גם לתושבי חוץ שמתכננים לעלות ורוצים שנכס בירושלים יחכה להם.</p>
             </div>
           </article>
-          <article class="card reveal">
-            <picture>
+          <article class="feature reveal">
+            <picture class="feature__photo">
               <source srcset="assets/lobby.webp" type="image/webp">
-              <img src="assets/lobby.jpg" alt="הלובי של הוד דניה" width="1000" height="747" loading="lazy">
+              <img src="assets/lobby.jpg" alt="הלובי של הוד דניה" width="1200" height="896" loading="lazy">
             </picture>
-            <div class="card__body">
+            <div class="feature__text">
+              <span class="feature__index" aria-hidden="true">03</span>
               <h3>ילדים שרוצים לעזור להורים לעבור</h3>
-              <p>הרבה פעמים מי שמתחילים לבדוק דיור מוגן הם דווקא הילדים. הם רוצים שההורים יגורו במקום בטוח ובקהילה, עם רופא ואחות בימים קבועים, כונן רפואי בכל שעה ולחצני מצוקה בכל דירה, אבל הכסף של ההורים קשור בדירה שלהם. המודל בוחן גם שימוש בנכס שבבעלות הילדים, או בדירה של ההורים עצמם, כדי לגייס את המימון. האפשרות מחייבת כמובן בחינה של יכולת ההחזר וההתחייבויות של מי שלוקח את המימון.</p>
+              <p>הרבה פעמים מי שמתחילים לבדוק דיור מוגן הם דווקא הילדים. הם רוצים שההורים יגורו במקום בטוח ובקהילה, עם רופא ואחות בימים קבועים, כונן רפואי בכל שעה ולחצני מצוקה בכל דירה, אבל הכסף של ההורים קשור בדירה שלהם.</p>
+              <p>המודל בוחן גם שימוש בנכס שבבעלות הילדים, או בדירה של ההורים עצמם, כדי לגייס את המימון. האפשרות מחייבת כמובן בחינה של יכולת ההחזר וההתחייבויות של מי שלוקח את המימון.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="ownership-title">
+    <section class="section section--dark" aria-labelledby="ownership-title">
       <div class="wrap">
-        <h2 id="ownership-title" class="center">הדירה נשארת נכס של המשפחה</h2>
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--light">בעלות מלאה</p>
+          <h2 id="ownership-title">הדירה נשארת נכס של המשפחה</h2>
+        </header>
         <ul class="perks">
-          <li class="perk reveal"><strong>בעלות מלאה בטאבו</strong><span>הדירה רשומה על שמכם</span></li>
-          <li class="perk reveal"><strong>בלי פיקדון</strong><span>לא כמו דיור מוגן רגיל</span></li>
-          <li class="perk reveal"><strong>בלי שחיקה</strong><span>הנכס שלכם לכל החיים</span></li>
-          <li class="perk reveal"><strong>מכירה, השכרה וירושה</strong><span>כמו כל נכס אחר</span></li>
+          <li class="perk reveal">
+            <span class="perk__icon"><svg class="icon" aria-hidden="true"><use href="#i-deed"/></svg></span>
+            <strong>בעלות מלאה בטאבו</strong><span>הדירה רשומה על שמכם</span>
+          </li>
+          <li class="perk reveal">
+            <span class="perk__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <strong>בלי פיקדון</strong><span>לא כמו דיור מוגן רגיל</span>
+          </li>
+          <li class="perk reveal">
+            <span class="perk__icon"><svg class="icon" aria-hidden="true"><use href="#i-growth"/></svg></span>
+            <strong>בלי שחיקה</strong><span>הנכס שלכם לכל החיים</span>
+          </li>
+          <li class="perk reveal">
+            <span class="perk__icon"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
+            <strong>מכירה, השכרה וירושה</strong><span>כמו כל נכס אחר</span>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="section section--tint" aria-labelledby="summary-title">
-      <div class="wrap split">
-        <div class="prose">
-          <h2 id="summary-title">משנים את השיטה, מרחיבים את האפשרויות</h2>
-          <p>לבני 60 ומעלה שרוצים לעבור דירה, למשקיעים ולילדים שדואגים להוריהם יש רצון משותף להתקדם עכשיו, גם כשההון העצמי עדיין קשור בדירה הקיימת.</p>
-          <p>המודל של <strong>הוד דניה</strong> מציע לראות בנכס הקיים חלק מהפתרון, כי הוא יכול לשמש בסיס למימון ולהכניס שכר דירה עד שיימכר. מי ששוקלים לעבור לדיור מוגן יוקרתי בקריית היובל, מול פארק דניה, יכולים לבדוק אם יש דרך מימון שמתאימה לצרכים וליכולת הכלכלית שלהם.</p>
-        </div>
-        <figure class="split__photo reveal">
-          <picture>
-            <source srcset="assets/pool.webp" type="image/webp">
-            <img src="assets/pool.jpg" alt="בריכת הגג של הוד דניה בזריחה, עם נוף לירושלים" width="1400" height="1050" loading="lazy">
-          </picture>
-          <figcaption>בריכת הגג בזריחה</figcaption>
-        </figure>
+    <section class="banner" aria-labelledby="summary-title">
+      <picture class="banner__bg">
+        <source srcset="assets/pool-wide.webp" type="image/webp">
+        <img src="assets/pool-wide.jpg" alt="בריכת הגג של הוד דניה בזריחה, עם נוף לירושלים" width="2400" height="1116" loading="lazy">
+      </picture>
+      <div class="wrap banner__content reveal">
+        <h2 id="summary-title">משנים את השיטה, מרחיבים את האפשרויות</h2>
+        <p>לבני 60 ומעלה שרוצים לעבור דירה, למשקיעים ולילדים שדואגים להוריהם יש רצון משותף להתקדם עכשיו, גם כשההון העצמי עדיין קשור בדירה הקיימת.</p>
       </div>
+      <p class="banner__caption">בריכת הגג בזריחה</p>
     </section>
 
     <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap contact__inner">
-        <h2 id="contact-title" class="center">לפרטים נוספים ותיאום פגישה</h2>
-        <p class="center muted">השאירו פרטים, והפנייה תישלח בוואטסאפ ישירות למשרד המכירות. אפשר גם לחייג.</p>
-        <form class="form" id="lead-form" novalidate>
-          <div class="field">
-            <label for="f-name">שם מלא <span aria-hidden="true">*</span></label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
-            <p class="field__error" id="e-name" role="alert"></p>
-          </div>
-          <div class="field">
-            <label for="f-phone">טלפון <span aria-hidden="true">*</span></label>
-            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required aria-describedby="e-phone">
-            <p class="field__error" id="e-phone" role="alert"></p>
-          </div>
-          <div class="field">
-            <label for="f-email">אימייל</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" dir="ltr" aria-describedby="e-email">
-            <p class="field__error" id="e-email" role="alert"></p>
-          </div>
-          <fieldset class="field">
-            <legend>מתעניינים עבור</legend>
-            <div class="chips">
-              <label class="chip"><input type="radio" name="for" value="עצמי" checked><span>עצמי</span></label>
-              <label class="chip"><input type="radio" name="for" value="ההורים"><span>ההורים</span></label>
-              <label class="chip"><input type="radio" name="for" value="השקעה"><span>השקעה</span></label>
-            </div>
-          </fieldset>
-          <div class="field">
-            <label class="consent">
-              <input id="f-consent" name="consent" type="checkbox" required aria-describedby="e-consent">
-              <span>אני מאשר/ת לקבל מידע שיווקי על הוד דניה בדוא"ל, במסרון או בשיחת טלפון מחברת הוד דניה בע"מ, גם אם מספר הטלפון רשום במאגר "אל תתקשרו אלי" של הרשות להגנת הצרכן. הפרטים נשלחים בוואטסאפ ישירות למשרד המכירות, משמשים רק למענה לפנייה, והאתר אינו שומר אותם.</span>
-            </label>
-            <p class="field__error" id="e-consent" role="alert"></p>
-          </div>
-          <button class="btn btn--turq btn--block" type="submit">שליחה בוואטסאפ</button>
-          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+      <div class="wrap contact__inner reveal">
+        <img class="contact__logo" src="assets/logo.png" alt="" width="480" height="582" loading="lazy">
+        <h2 id="contact-title">לפרטים נוספים ותיאום פגישה</h2>
+        <p>המודל של <strong>הוד דניה</strong> מציע לראות בנכס הקיים חלק מהפתרון, כי הוא יכול לשמש בסיס למימון ולהכניס שכר דירה עד שיימכר. מי ששוקלים לעבור לדיור מוגן יוקרתי בקריית היובל, מול פארק דניה, יכולים לבדוק איתנו אם יש דרך מימון שמתאימה לצרכים וליכולת הכלכלית שלהם.</p>
+        <div class="actions actions--center">
+          <a class="btn btn--wa btn--lg" href="tel:+972737054213" data-whatsapp>
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>שלחו הודעה בוואטסאפ
+          </a>
+          <a class="btn btn--gold btn--lg" href="tel:+972737054213">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>חייגו <span dir="ltr">073-705-4213</span>
+          </a>
+        </div>
         <p class="disclaimer">*בכפוף לתקנון החברה ולאישור הגורם המממן. ט.ל.ח</p>
       </div>
     </section>
@@ -186,15 +202,18 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <img src="assets/logo.png" alt="הוד דניה" width="96" height="116" loading="lazy">
-      <p>רחוב גולומב 25, קריית היובל, ירושלים</p>
-      <p><a href="tel:+972737054213">073-705-4213</a> · <a href="https://www.hoddenya.com" rel="noopener">hoddenya.com</a></p>
+      <p>הוד דניה · רחוב גולומב 25, קריית היובל, ירושלים</p>
+      <p><a href="tel:+972737054213" dir="ltr">073-705-4213</a> · <a href="https://www.hoddenya.com" rel="noopener">hoddenya.com</a></p>
     </div>
   </footer>
 
   <nav class="dock" aria-label="יצירת קשר מהירה">
-    <a class="dock__btn" href="tel:+972737054213">חיוג</a>
-    <a class="dock__btn dock__btn--turq" href="#contact">השאירו פרטים</a>
+    <a class="dock__btn dock__btn--wa" href="tel:+972737054213" data-whatsapp>
+      <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>וואטסאפ
+    </a>
+    <a class="dock__btn" href="tel:+972737054213">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>חיוג
+    </a>
   </nav>
 
   <script src="script.js" defer></script>
