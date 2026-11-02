@@ -1,6 +1,6 @@
 // Hod Dania landing: WhatsApp links, mobile contact dock, scroll reveal.
 
-// Sales office WhatsApp number (international format, digits only) - 055-292-9224.
+// Sales office WhatsApp number (international format, digits only) - 055-29-29-224.
 const WHATSAPP_NUMBER = '972552929224';
 const WHATSAPP_TEXT = 'שלום, אשמח לשמוע פרטים על המעבר להוד דניה בלי הון עצמי.';
 const REVEAL_THRESHOLD = 0.15;
